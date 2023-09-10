@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('first', \App\Livewire\First::class)->name('first');
+Route::get('second', \App\Livewire\Second::class)->name('second');
